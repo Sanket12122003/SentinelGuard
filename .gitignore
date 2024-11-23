@@ -1,0 +1,21 @@
+# Python
+*.pyc
+__pycache__
+venv/
+
+# Jupyter Notebooks
+*.ipynb_checkpoints
+
+# System Files
+.DS_Store
+
+# Streamlit specific
+.streamlit/
+
+# Environment Variables
+.env
+# Ignore large model files
+project/models/*.pth
+# Ignore dataset files
+project/data/*.tar.gz
+

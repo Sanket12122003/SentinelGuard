@@ -1,0 +1,17 @@
+Flask
+FastAPI
+tensorflow
+torch
+opencv-python-headless
+vaderSentiment
+scikit-learn
+streamlit
+sounddevice
+scipy
+deepface
+librosa
+torchvision
+requests
+tqdm
+click
+
