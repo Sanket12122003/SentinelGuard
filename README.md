@@ -27,20 +27,25 @@
    cd sentinelguard
 
 2.Set up a virtual environment:
-   ```bash
-   python -m venv env  
-  source env/bin/activate # For Linux/Mac  
-  env\Scripts\activate    # For Windows
+   
+     python -m venv env  
+    source env/bin/activate # For Linux/Mac  
+    env\Scripts\activate    # For Windows
+
 
 3.Install dependencies:
 
-pip install -r requirements.txt
+    pip install -r requirements.txt
 
-4 .run the backend file:
-python app.py
+4. run the backend file:
+   ```
+   cd project
+   python app.py
 
-5. run the frontend file:
-streamlit run frontend.py
+6. run the frontend file:
+   ```
+   cd project
+   streamlit run frontend.py
 
 ## Usage
 Upload an image for deepfake detection.
