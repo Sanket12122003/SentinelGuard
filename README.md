@@ -37,7 +37,26 @@
 pip install -r requirements.txt
 
 4 .run the backend file:
-python app.py  
+python app.py
+
+5. run the frontend file:
+streamlit run frontend.py
+
+## Usage
+Upload an image for deepfake detection.
+View results (Real or Fake) with a detailed analysis.
+
+Future Enhancements
+Extend detection to videos and voice deepfakes.
+Improve scalability for larger datasets and faster processing.
+Develop a user-friendly mobile app for Android/iOS.
+References
+The concept of detecting AI-generated faces and its challenges inspired this project. Learn more about GANs and deepfake detection from this article: AI-Generated Faces vs. Real Faces.
+
+Contributing
+Contributions are welcome! Fork the repository, create a new branch, and submit a pull request.
+
+
 
 
 
