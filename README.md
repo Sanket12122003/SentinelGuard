@@ -24,5 +24,24 @@
 1. Clone the repository:  
    ```bash  
    git clone https://github.com/your-repo/sentinelguard.git  
-   cd sentinelguard  
+   cd sentinelguard
+
+2.Set up a virtual environment:
+   ```bash
+   python -m venv env  
+  source env/bin/activate # For Linux/Mac  
+  env\Scripts\activate    # For Windows
+
+3.Install dependencies:
+
+pip install -r requirements.txt
+
+4 .run the backend file:
+python app.py  
+
+
+
+
+
+   
 
