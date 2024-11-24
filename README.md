@@ -48,8 +48,8 @@
    streamlit run frontend.py
 
 ## Usage
-Upload an image for deepfake detection.
-View results (Real or Fake) with a detailed analysis.
+- Upload an image for deepfake detection.
+- View results (Real or Fake) with a detailed analysis.
 
 Future Enhancements
 Extend detection to videos and voice deepfakes.
