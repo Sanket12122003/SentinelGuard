@@ -47,19 +47,6 @@ except Exception as e:
     print(f"Error loading model: {e}")
     exit(1)
 
-# Function to analyze frequency domain
-def analyze_frequency(img):
-    grayscale = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-    f_transform = fft2(grayscale)
-    f_shift = fftshift(f_transform)
-    magnitude_spectrum = np.log(np.abs(f_shift) + 1)
-    return np.mean(magnitude_spectrum)
-
-# Function to analyze edges and texture
-def analyze_edges_and_texture(img):
-    edges = cv2.Canny(img, 100, 200)
-    edge_density = np.sum(edges) / (img.shape[0] * img.shape[1])
-    return edge_density
 
 @app.route('/api/authenticate', methods=['POST'])
 def authenticate():
@@ -80,12 +67,10 @@ def authenticate():
         with torch.no_grad():
             prediction = discriminator(img_tensor).item()  # Output from the discriminator
 
-        # Additional measures
-        frequency_score = analyze_frequency(img)
-        edge_score = analyze_edges_and_texture(img)
+        
 
         # Combined decision-making logic
-        if prediction > 0.5 and frequency_score > 5 and edge_score > 0.01:
+        if prediction > 0.5 :
             result = "Real"
         else:
             result = "Fake"
